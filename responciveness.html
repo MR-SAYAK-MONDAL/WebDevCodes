@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <style>
+        html{
+            font-size: 1em;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                color: red;
+            }
+        }
+
+        @media (orientation:landscape){
+            body{
+                color: rebeccapurple;
+            }
+        }
+
+        @media screen and (min-width: 600px) and (orientation: landscape) {
+            body{
+                color: royalblue;
+            }
+        }
+        
+        @media screen and (max-width:600px), screen and (orientation:landscape) {
+            body {
+                color: tomato;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, eius? Cupiditate nam temporibus consectetur, quos minus dicta autem sapiente ea facere dolor eaque quod, iusto illum laboriosam quam ducimus eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ducimus aliquid fuga et deserunt dicta, sit expedita dolorum excepturi doloremque! Asperiores cum vero officiis eos voluptates enim id libero fuga.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus assumenda sapiente voluptatum recusandae nesciunt at aliquid impedit labore excepturi maxime, maiores quidem non laudantium autem? Odio atque dolorem nobis rem?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, et repellat nostrum culpa facere officia suscipit ipsa fuga consectetur voluptatibus, magni molestias sapiente asperiores quisquam dolorem, pariatur totam voluptatum at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum blanditiis architecto recusandae numquam ducimus impedit exercitationem labore dolores repellendus dignissimos iste vel, provident maxime sed quia distinctio quae libero repudiandae minima eaque delectus harum nam molestias quibusdam! Dolore, sit reprehenderit?
+    </p>
+</body>
+</html>

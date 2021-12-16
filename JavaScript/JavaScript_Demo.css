@@ -1,0 +1,15 @@
+button{
+    background-color: sandybrown;
+    padding: 20px;
+    cursor: pointer;
+    cursor: progress;
+}
+.btn{
+    font-size: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: cyan;
+}

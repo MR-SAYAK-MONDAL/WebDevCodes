@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            
+            /* "fr" unit use korle son content same size er hoya jabe */
+            
+            grid-gap: 20px;
+            /* CSS Grid er majhe kono space debar jonno "Grid-gap" use korbo */
+            
+            /* grid-template-columns: repeat(4,1fr); */
+            
+            /* koto gulo collumn use korbo seta "repeat" dea easily korajai */
+            
+            /* grid-auto-rows: 100px; */
+            /* grid-auto-columns: 50px; */
+
+            column-gap: 75px;
+ 
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns: minmax(50px,auto);
+
+            grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+            /* grid-template-rows: repeat(auto-fill, minmax(200px,1fr)); */
+        }
+        .items{
+            background-color: lightcoral;
+            border: 3px green solid;
+            border-radius: 7px;
+            overflow: auto;
+        }
+        #item-2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        #item-1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #item-4{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        #item-5{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .item-1-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .nested-item{
+            border: green solid 3px;
+            border-radius: 7px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item-1">box 1</div>
+        <div class="items" id="item-2">box 2</div>
+        <div class="items" id="item-3">box 3</div>
+        <div class="items" id="item-4">box 4</div>
+        <div class="items item-1-container" id="item-5">
+            <div class="nested-item">box in box 1</div>
+            <div class="nested-item">box in box 2</div>
+            <div class="nested-item">box in box 3</div>
+        </div>
+    </div>
+</body>
+</html>

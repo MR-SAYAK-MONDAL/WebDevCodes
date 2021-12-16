@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        a{
+            animation: bouncing .5s ease 1s infinite alternate both;
+            background:  darkblue;
+            border-radius: 50%;
+            display: flex;
+            float: left;
+            color: wheat;
+            cursor: pointer;
+            font-size: 3rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            justify-content: center;
+            font-weight: 300;
+            letter-spacing: .2em;
+            padding: 1em 2em 1.1em;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            vertical-align: top;
+            margin-top: 400px;
+            text-align: center;
+            align-items: center;
+        }
+        a{
+            left: 720px;
+        }
+
+        @keyframes bouncing{
+            0%{
+                bottom: 0;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+            }
+            /* 50%{
+                color: tomato;
+            } */
+            100%{
+                bottom: 150px;
+                box-shadow: 0 150px 150px rgba(0, 0, 0, .5);
+                color: whitesmoke;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <a class="position">SAMSUNG</a>
+</body>
+</html>

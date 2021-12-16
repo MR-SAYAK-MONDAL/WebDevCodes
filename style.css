@@ -1,0 +1,63 @@
+h1{
+    color: red;
+}
+
+h4{
+    color: chocolate;
+}
+
+h5{
+    color: darkgreen;
+}
+
+h6{
+    color: cornflowerblue;
+}
+
+a:hover{
+    color: tomato;
+    text-decoration: none;
+}
+
+p::first-line{
+    color: royalblue;
+}
+
+li{
+    list-style-type: square;
+}
+
+li{
+    list-style-position: inside;
+}
+
+.special{
+    color: lawngreen;
+    font-weight: bold;
+}
+
+li em{
+    color: rebeccapurple;
+    font-weight:bold;
+}
+
+table,tr,th,td{
+    border: 2px solid tomato;
+    border-collapse: collapse;
+    padding: 10px;
+    border-spacing: 5px;
+}
+
+th{
+    background-color:coral;
+}
+
+td{
+    background-color: cornflowerblue;
+    font-style: italic;
+    font-weight: 600;
+}
+
+th.result{
+    background-color:cyan;
+}
